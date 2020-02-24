@@ -1,0 +1,25 @@
+.box1 {
+  position: relative;
+  width: 300px;
+  float: left;
+  height: 50px;
+  background: gray;
+}
+
+.box2 {
+  width: 60%;
+  height: 100%;
+  background: lightgreen;
+  margin-left: -100%;
+  animation: move 2s cubic-bezier(0, 0, .8, .45) forwards;
+}
+
+.box2 span {
+  float: right;
+  color: black;
+}
+
+@keyframes move {
+  0% { margin-left: -100%;}
+  100% { margin-left: 0; }
+}
